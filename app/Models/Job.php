@@ -17,7 +17,7 @@
                 [
                     'id' => 2,
                     'title' => 'Programmer',
-                    'salary' => '$10,000'
+                    'salary' => '$60,000'
                 ],
                 [
                     'id' => 3,
