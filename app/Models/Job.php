@@ -4,8 +4,7 @@
 
     use Illuminate\Support\Arr;
 
-    class Job
-    {
+    class Job {
         public static function all(): array
         {
             return [
@@ -17,7 +16,7 @@
                 [
                     'id' => 2,
                     'title' => 'Programmer',
-                    'salary' => '$60,000'
+                    'salary' => '$10,000'
                 ],
                 [
                     'id' => 3,
@@ -31,9 +30,10 @@
         {
             $job = Arr::first(static::all(), fn($job) => $job['id'] == $id);
 
-            if (!$job) {
+            if (! $job) {
                 abort(404);
             }
+
             return $job;
         }
     }
