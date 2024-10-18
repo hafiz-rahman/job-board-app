@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Models;
+    namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+    use Illuminate\Database\Eloquent\Factories\HasFactory;
+    use Illuminate\Database\Eloquent\Model;
 
-class Employer extends Model
-{
-    use HasFactory;
-
-    public function jobs()
+    class Employer extends Model
     {
-        return $this->hasMany(Job::class);
+        use HasFactory;
+
+        public function jobs()
+        {
+            return $this->hasMany(Job::class);
+        }
     }
-}
